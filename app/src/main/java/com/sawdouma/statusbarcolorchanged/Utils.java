@@ -19,7 +19,7 @@ class Utils {
         return result;
     }
 
-    static void setStatusbarColor(Activity activity, View view) {
+    static void setStatusBarColor(Activity activity, View view) {
         Window w = activity.getWindow();
         if (Build.VERSION.SDK_INT == Build.VERSION_CODES.KITKAT) {
             w.addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
